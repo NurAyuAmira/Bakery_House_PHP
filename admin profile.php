@@ -241,7 +241,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label for="postcode" class="form-label">Postcode</label>
-                                            <input class="form-control" id="postcode" name="postcode" required value="<?php echo $row['Admin_Address_Postcode']?>">
+                                            <input class="form-control" id="postcode" name="postcode" pattern="[0-9]{5}" required value="<?php echo $row['Admin_Address_Postcode']?>">
                                         </div>
                                     </div>
                                 </div>
