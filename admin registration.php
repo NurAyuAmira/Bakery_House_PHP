@@ -103,7 +103,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="postcode" class="form-label">Postcode</label>
-                                        <input class="form-control" id="postcode" name="postcode" required max="5">
+                                        <input class="form-control" id="postcode" name="postcode" pattern="[0-9]{5}" required max="5">
                                     </div>
                                 </div>
                             </div>
