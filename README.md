@@ -13,3 +13,6 @@ Fix Price
 
 4. Menu Update :
 Product Type dekat Cake and Bread takleh nak fix
+
+
+5. Forgot password & Messages -> Involve Gmail. So, need to change auth password everytime https://www.youtube.com/watch?v=TvaKz3wwvWY
