@@ -77,7 +77,7 @@
                                 <form action="" method="post" class="text-start" onsubmit="return(validatePassword());">
                                     <div class="mt-4">
                                         <label for="newpwd" class="form-label"><i class="bi bi-key-fill"></i>&nbsp;Enter Your New Password :</label>
-                                        <input type="password" class="form-control" id="newpwd" placeholder="Enter Your New Password" name="newpwd" required onchange="checkPassword();">
+                                         <input type="password" class="form-control" id="newpwd" placeholder="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="newpwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required onchange="checkPassword();">
                                     </div>
                                     <div class="mt-4">
                                         <label for="confirmpwd" class="form-label"><i class="bi bi-key-fill"></i>&nbsp;Confirm Your Password : <span id="spanConfirmPW" class="text-danger"></span></label>
