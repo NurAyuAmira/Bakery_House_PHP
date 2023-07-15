@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<style>
+    .card{width:100%;}
+    .card-img-top {width:100%;height: 400px;object-fit: cover;}
+    .btn:focus{box-shadow: none;}
+    .navbar{background-color: #B4B8A6;}
+</style>
+<body style="font-family: 'Roboto', sans-serif;">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar" style="font-size:x-large;font-weight: bold;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="menu.php">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-0" style="background-color: #4d3f32;">
+    <div class="container bg-light px-0 pb-5">
+      <img src="bg/team.png" class="w-100">
+      <div class="text-center p-5 bg-white">
+        <h1 class="fw-bold">About Bakery House</h1>
+        <h4><b>Bakery House</b> is an online food ordering system website that created by a team of <b>MMU</b> students. <b>Bakery House</b> is a committed team of talented individuals who provide superior quality bakery, pastries and wedding cakes. Our goal is to provide all of our customers with an unparalleled product and experience. Our talented team of pastry chefs uses the purist of ingredients and cutting edge techniques to create a product that is truly superior in quality. We constantly provide outstanding customer service and believe that customer satisfaction is our ultimate goal. We are dedicated to provide our family of employees with a respectful and positive work environment where everyone is equal.</h4>
+      </div>
+      <div class="text-center mt-5">
+        <h2>Our Team</h2>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-4">
+            <div class="card  mt-5">
+            <img class="card-img-top" src="img/naufal.png">
+            <div class="card-body text-center">
+                <h4 class="card-title">Muhammad Dhiyaul Naufal</h4>
+                <p class="card-text">CEO of Bakery House</p>
+                <p class="card-text text-info">dhiyaulnaufal@gmail.com</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card  mt-5">
+            <img class="card-img-top" src="img/daniel.png">
+            <div class="card-body text-center">
+                <h4 class="card-title">Daniel Imtiyaz</h4>
+                <p class="card-text">Manager of Bakery House</p>
+                <p class="card-text text-info">danielimtiyaz@gmail.com</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card  mt-5">
+            <img class="card-img-top" src="img/ayu.png">
+            <div class="card-body text-center">
+                <h4 class="card-title">Nur Ayu Amira</h4>
+                <p class="card-text">Developer of Bakery House</p>
+                <p class="card-text text-info">yuz9690@gmail.com</p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+  $(document).ready(function(){
+     $(window).scroll(function(){
+         $('.navbar').css("opacity", 1 - $(window).scrollTop()/700)
+         if($('.navbar').css("opacity") == 0)
+         {
+            $('.navbar').hide();
+         }
+         else
+         {
+             $('.navbar').show();
+         }
+     })
+ })
+</script>
+</html>
